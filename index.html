@@ -1,0 +1,335 @@
+
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>チキューマトペ・キャンプキャラバン 2026</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kiwi+Maru:wght@300;400;500&family=M+PLUS+Rounded+1c:wght@400;700;800&display=swap" rel="stylesheet">
+    <!-- Lucide Icons CDN -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <!-- External CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        forest: '#2D4F1E',
+                        earth: '#8B5E34',
+                        sky: '#60A5FA',
+                        moss: '#4A7C59',
+                        sand: '#F5F5DC',
+                        pop: '#F26419',
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-sand text-gray-800 grain">
+    <!-- Navigation -->
+    <nav id="main-nav" class="fixed top-0 left-0 right-0 z-50 bg-white/70 backdrop-blur-md border-b border-forest/5 px-6 py-4 flex justify-between items-center transition-all duration-500">
+        <div class="flex items-center gap-3">
+            <div class="w-10 h-10 bg-forest rounded-xl flex items-center justify-center text-white shadow-lg">
+                <i data-lucide="compass"></i>
+            </div>
+            <div class="flex flex-col">
+                <span class="font-black text-xl text-forest leading-none tracking-tighter italic">CHIKYU-MATOPE</span>
+                <span class="text-[10px] text-earth font-bold uppercase tracking-widest opacity-70">Camp Caravan 2026</span>
+            </div>
+        </div>
+        <div class="hidden lg:flex gap-10 text-forest font-bold text-sm tracking-widest uppercase">
+            <a href="#about" class="hover:text-pop transition-all hover:tracking-[0.2em]">About</a>
+            <a href="#program" class="hover:text-pop transition-all hover:tracking-[0.2em]">Program</a>
+            <a href="#schedule" class="hover:text-pop transition-all hover:tracking-[0.2em]">Schedule</a>
+            <a href="#entry" class="hover:text-pop transition-all hover:tracking-[0.2em]">Entry</a>
+        </div>
+        <a href="#entry" class="bg-pop text-white px-8 py-3 rounded-2xl font-black hover:scale-105 active:scale-95 transition-all shadow-xl shadow-pop/20 uppercase tracking-widest text-sm text-center">
+            申し込み
+        </a>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="relative h-screen flex items-center justify-center overflow-hidden">
+        <div class="absolute inset-0 z-0">
+            <video autoPlay muted loop playsInline class="w-full h-full object-cover scale-105 brightness-90">
+                <source src="video/input_file_0.mp4" type="video/mp4">
+            </video>
+            <div class="absolute inset-0 video-overlay"></div>
+        </div>
+        <div class="relative z-10 text-center px-6 mt-12">
+            <div class="reveal inline-block bg-white/10 backdrop-blur-lg px-6 py-2 rounded-full text-white mb-8 border border-white/20 text-xs md:text-sm font-bold tracking-[0.3em] uppercase">
+                ⛺️ Discovery Awaits This Summer
+            </div>
+            <h1 class="reveal text-5xl md:text-8xl font-black text-white mb-10 leading-[0.9] tracking-tighter drop-shadow-2xl">
+                地球の声を<br />
+                <span class="text-sky italic">探しに行こう！</span>
+            </h1>
+            <p class="reveal text-lg md:text-3xl text-white/90 mb-14 max-w-4xl mx-auto font-accent leading-relaxed">
+                対戦型カードゲーム × 自然体験キャンプ<br />
+                遊びの中から、地球の未来を考える力を育む冒険へ。
+            </p>
+            <div class="reveal flex flex-col md:flex-row gap-6 justify-center items-center">
+                <a href="#entry" class="group bg-pop hover:bg-orange-600 text-white px-12 py-6 rounded-3xl text-2xl font-black transition-all shadow-2xl shadow-pop/40 flex items-center gap-4">
+                    冒険に参加する <i data-lucide="arrow-right" class="group-hover:translate-x-3 transition-transform"></i>
+                </a>
+                <a href="#about" class="bg-white/10 hover:bg-white/20 text-white backdrop-blur-xl px-12 py-6 rounded-3xl text-2xl font-black transition-all border border-white/40 flex items-center gap-3">
+                    <i data-lucide="play-circle" class="w-8 h-8"></i> 詳しく見る
+                </a>
+            </div>
+        </div>
+        <div class="absolute bottom-0 left-0 w-full overflow-hidden leading-none z-20">
+            <svg viewBox="0 0 1200 120" preserveAspectRatio="none" class="relative block w-full h-24 curve-divider">
+                <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V120H0V95.8C58.23,115.34,126,121.75,190.22,108.35,244,97.12,284.27,63.34,321.39,56.44Z"></path>
+            </svg>
+        </div>
+    </header>
+
+    <!-- Marquee -->
+    <div class="bg-forest py-6 overflow-hidden border-y-[8px] border-pop relative z-30 shadow-2xl">
+        <div class="animate-marquee whitespace-nowrap text-white font-black text-3xl tracking-[0.3em] flex items-center">
+            <span class="mx-16 inline-flex items-center gap-8 uppercase">
+                CHIKYU-MATOPE CAMP CARAVAN 2026 <i data-lucide="zap" class="text-pop fill-pop w-10 h-10"></i> - SUMMER TOUR - <i data-lucide="sparkles" class="text-yellow-400 fill-yellow-400 w-10 h-10"></i> EXPLORE THE WORLD! ⛺️
+            </span>
+            <span class="mx-16 inline-flex items-center gap-8 uppercase">
+                CHIKYU-MATOPE CAMP CARAVAN 2026 <i data-lucide="zap" class="text-pop fill-pop w-10 h-10"></i> - SUMMER TOUR - <i data-lucide="sparkles" class="text-yellow-400 fill-yellow-400 w-10 h-10"></i> EXPLORE THE WORLD! ⛺️
+            </span>
+        </div>
+    </div>
+
+    <!-- About Section -->
+    <section id="about" class="py-40 px-6 md:px-20 max-w-7xl mx-auto">
+        <div class="grid lg:grid-cols-2 gap-24 items-center">
+            <div class="reveal">
+                <div class="inline-flex items-center gap-3 text-moss font-black mb-6 tracking-widest uppercase text-xs">
+                    <i data-lucide="tree-pine"></i>
+                    <span>Mission of the Caravan</span>
+                </div>
+                <h2 class="text-5xl md:text-7xl font-black text-forest mb-12 leading-[1.1] tracking-tighter">
+                    ちきゅうのオノマトペを<br><span class="text-earth underline decoration-earth/20 underline-offset-8">ハントしよう。</span>
+                </h2>
+                <div class="space-y-8 text-xl leading-relaxed text-gray-700">
+                    <p class="bg-white p-10 rounded-[48px] shadow-2xl shadow-forest/5 border-l-[16px] border-forest relative text-lg md:text-xl">
+                        <span class="absolute -top-6 -right-6 w-16 h-16 bg-pop rounded-full flex items-center justify-center text-white shadow-xl rotate-12">
+                            <i data-lucide="star" class="fill-white"></i>
+                        </span>
+                        <strong>「たたかえ！ちきゅうまとぺ」</strong>の白熱バトルと、フィールドワークを融合。自然が奏でる「音」を採集し、自分だけの最強カードを作るキャンプです。
+                    </p>
+                    <p class="font-accent italic opacity-80 pl-4 border-l-2 border-moss/20">
+                        「ザザーン」「シュルシュル」「ピカリ」...<br>
+                        地球の小さな囁きに耳を澄ませて、未来のカードをデザイン。
+                    </p>
+                </div>
+                
+                <!-- Navigators -->
+                <div class="mt-16 grid sm:grid-cols-2 gap-8">
+                    <div class="flex items-center gap-6 bg-orange-50 p-6 rounded-[32px] border border-orange-100 shadow-sm transition-transform hover:-rotate-1">
+                        <div class="w-20 h-20 bg-pop rounded-2xl overflow-hidden flex-shrink-0 border-4 border-white shadow-lg">
+                            <img src="https://images.unsplash.com/photo-1595152772835-219674b2a8a6?auto=format&fit=crop&q=80&w=200" alt="ヒカリ" class="w-full h-full object-cover">
+                        </div>
+                        <div>
+                            <p class="font-black text-pop text-xl">ヒカリ</p>
+                            <p class="text-xs text-earth font-bold opacity-70 italic leading-tight">「ワクワクを採集しに<br>出発進行だよ！」</p>
+                        </div>
+                    </div>
+                    <div class="flex items-center gap-6 bg-emerald-50 p-6 rounded-[32px] border border-emerald-100 shadow-sm transition-transform hover:rotate-1">
+                        <div class="w-20 h-20 bg-forest rounded-2xl overflow-hidden flex-shrink-0 border-4 border-white shadow-lg">
+                            <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&q=80&w=200" alt="シズク" class="w-full h-full object-cover">
+                        </div>
+                        <div>
+                            <p class="font-black text-forest text-xl">シズク</p>
+                            <p class="text-xs text-earth font-bold opacity-70 italic leading-tight">「自然の声を聞いて、<br>大切なものを見つけよう。」</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="reveal relative">
+                <div class="relative z-10 space-y-6">
+                    <img src="img/input_file_1.png" alt="Starry Night Camp" class="rounded-[60px] shadow-2xl border-[12px] border-white transform hover:rotate-0 rotate-2 transition-transform duration-700">
+                    <div class="grid grid-cols-2 gap-6">
+                        <img src="img/input_file_2.png" alt="Boy gazing stars" class="rounded-[40px] shadow-xl border-8 border-white aspect-video object-cover -rotate-2 hover:rotate-0 transition-transform">
+                        <img src="https://images.unsplash.com/photo-1523906834658-6e24ef2386f9?auto=format&fit=crop&q=80&w=400" alt="Outdoor session" class="rounded-[40px] shadow-xl border-8 border-white aspect-video object-cover rotate-1 hover:rotate-0 transition-transform">
+                    </div>
+                </div>
+                <div class="absolute -top-10 -right-10 w-40 h-40 bg-sky/20 rounded-full blur-3xl animate-pulse"></div>
+                <div class="absolute -bottom-10 -left-10 w-64 h-64 bg-pop/10 rounded-full blur-3xl"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Program Section -->
+    <section id="program" class="bg-forest py-40 px-6 relative overflow-hidden rounded-[80px] md:rounded-[120px] mx-4 my-12">
+        <div class="absolute inset-0 bg-[url('https://www.transparenttextures.com/patterns/leaf.png')] opacity-10 pointer-events-none"></div>
+        <div class="max-w-7xl mx-auto relative z-10">
+            <div class="reveal text-center mb-24">
+                <h2 class="text-5xl md:text-8xl font-black text-white mb-8 tracking-tighter">Experience</h2>
+                <p class="text-sand/70 text-2xl font-accent leading-relaxed">地球のスペシャリストになる3つの物語</p>
+            </div>
+
+            <div class="grid lg:grid-cols-3 gap-12">
+                <div class="reveal bg-white rounded-[56px] p-4 card-hover">
+                    <div class="overflow-hidden rounded-[42px] h-64 mb-8">
+                        <img src="img/input_file_3.png" alt="Card Battle" class="w-full h-full object-cover">
+                    </div>
+                    <div class="px-6 pb-8">
+                        <div class="flex items-center justify-between mb-6">
+                            <span class="bg-forest text-white px-5 py-1.5 rounded-full text-xs font-black uppercase tracking-widest">Phase 01</span>
+                            <div class="p-3 bg-sand rounded-2xl text-pop"><i data-lucide="zap" class="fill-pop"></i></div>
+                        </div>
+                        <h3 class="text-3xl font-black text-forest mb-6 tracking-tight leading-none">カードバトル予選</h3>
+                        <p class="text-gray-600 leading-relaxed text-sm md:text-base">「たたかえ！ちきゅうまとぺ」で熱いバトル！遊びながら地球の課題を学び、戦略を練る時間です。</p>
+                    </div>
+                </div>
+                <div class="reveal bg-white rounded-[56px] p-4 card-hover">
+                    <div class="overflow-hidden rounded-[42px] h-64 mb-8">
+                        <img src="https://images.unsplash.com/photo-1542601906990-b4d3fb778b09?auto=format&fit=crop&q=80&w=600" alt="Fieldwork" class="w-full h-full object-cover">
+                    </div>
+                    <div class="px-6 pb-8">
+                        <div class="flex items-center justify-between mb-6">
+                            <span class="bg-forest text-white px-5 py-1.5 rounded-full text-xs font-black uppercase tracking-widest">Phase 02</span>
+                            <div class="p-3 bg-sand rounded-2xl text-moss"><i data-lucide="mic" class="fill-moss"></i></div>
+                        </div>
+                        <h3 class="text-3xl font-black text-forest mb-6 tracking-tight leading-none">オノマトペ採集</h3>
+                        <p class="text-gray-600 leading-relaxed text-sm md:text-base">フィールドへ出発！森、川、風が発する「秘密の音」を聴き分け、五感を使って採集します。</p>
+                    </div>
+                </div>
+                <div class="reveal bg-white rounded-[56px] p-4 card-hover">
+                    <div class="overflow-hidden rounded-[42px] h-64 mb-8">
+                        <img src="https://images.unsplash.com/photo-1513364776144-60967b0f800f?auto=format&fit=crop&q=80&w=600" alt="Card Creation" class="w-full h-full object-cover">
+                    </div>
+                    <div class="px-6 pb-8">
+                        <div class="flex items-center justify-between mb-6">
+                            <span class="bg-forest text-white px-5 py-1.5 rounded-full text-xs font-black uppercase tracking-widest">Phase 03</span>
+                            <div class="p-3 bg-sand rounded-2xl text-yellow-500"><i data-lucide="sparkles" class="fill-yellow-500"></i></div>
+                        </div>
+                        <h3 class="text-3xl font-black text-forest mb-6 tracking-tight leading-none">オリジナルカード生成</h3>
+                        <p class="text-gray-600 leading-relaxed text-sm md:text-base">採集した音を具現化。世界に一つ、特別なスキルを持つマイカードをその場で作成し、コレクションに加えます。</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Schedule Section -->
+    <section id="schedule" class="py-40 px-6 max-w-6xl mx-auto">
+        <div class="reveal text-center mb-24">
+            <h2 class="text-5xl md:text-8xl font-black text-forest mb-6 tracking-tighter uppercase flex justify-center items-center gap-6">
+                <i data-lucide="calendar" class="w-12 h-12 text-pop"></i> Schedule
+            </h2>
+            <p class="text-earth font-black tracking-[0.4em] text-xs uppercase opacity-60">Caravan Tour 2026 Locations</p>
+        </div>
+        <div class="reveal bg-white rounded-[64px] shadow-2xl overflow-hidden border border-forest/5 p-4 md:p-12">
+            <div class="overflow-x-auto">
+                <table class="w-full text-left min-w-[700px]">
+                    <thead class="text-forest/30 uppercase text-[10px] tracking-[0.3em] font-black border-b-2 border-gray-50">
+                        <tr>
+                            <th class="px-8 py-6">Date</th>
+                            <th class="px-8 py-6">Caravan Stop</th>
+                            <th class="px-8 py-6">Booking Status</th>
+                            <th class="px-8 py-6"></th>
+                        </tr>
+                    </thead>
+                    <tbody class="divide-y divide-gray-50">
+                        <tr class="group hover:bg-sand/30 transition-all cursor-pointer">
+                            <td class="px-8 py-10"><span class="text-4xl font-black text-forest group-hover:text-pop transition-colors tracking-tighter">8/2 (土)</span><br><span class="text-[10px] text-gray-400 font-bold tracking-widest uppercase">Tokyo Area</span></td>
+                            <td class="px-8 py-10">
+                                <div class="flex items-center gap-4">
+                                    <div class="w-12 h-12 bg-forest/5 rounded-2xl flex items-center justify-center text-forest group-hover:bg-pop/10 transition-all"><i data-lucide="map-pin"></i></div>
+                                    <span class="text-xl font-black text-gray-700">奥多摩・氷川キャンプ場</span>
+                                </div>
+                            </td>
+                            <td class="px-8 py-10"><span class="bg-emerald-100 text-emerald-700 px-6 py-2 rounded-2xl text-xs font-black uppercase tracking-widest shadow-sm">募集中</span></td>
+                            <td class="px-8 py-10 text-right"><i data-lucide="chevron-right" class="w-8 h-8 opacity-0 group-hover:opacity-100 group-hover:translate-x-2 transition-all"></i></td>
+                        </tr>
+                        <tr class="group hover:bg-sand/30 transition-all cursor-pointer">
+                            <td class="px-8 py-10"><span class="text-4xl font-black text-forest group-hover:text-pop transition-colors tracking-tighter">8/16 (土)</span><br><span class="text-[10px] text-gray-400 font-bold tracking-widest uppercase">Osaka Area</span></td>
+                            <td class="px-8 py-10">
+                                <div class="flex items-center gap-4">
+                                    <div class="w-12 h-12 bg-forest/5 rounded-2xl flex items-center justify-center text-forest group-hover:bg-pop/10 transition-all"><i data-lucide="map-pin"></i></div>
+                                    <span class="text-xl font-black text-gray-700">能勢・自然の森キャンプ場</span>
+                                </div>
+                            </td>
+                            <td class="px-8 py-10"><span class="bg-pop/10 text-pop px-6 py-2 rounded-2xl text-xs font-black uppercase tracking-widest shadow-sm">残りわずか</span></td>
+                            <td class="px-8 py-10 text-right"><i data-lucide="chevron-right" class="w-8 h-8 opacity-0 group-hover:opacity-100 group-hover:translate-x-2 transition-all"></i></td>
+                        </tr>
+                        <tr class="group hover:bg-sand/30 transition-all cursor-pointer">
+                            <td class="px-8 py-10"><span class="text-4xl font-black text-forest group-hover:text-pop transition-colors tracking-tighter">8/23 (土)</span><br><span class="text-[10px] text-gray-400 font-bold tracking-widest uppercase">Hokkaido Area</span></td>
+                            <td class="px-8 py-10">
+                                <div class="flex items-center gap-4">
+                                    <div class="w-12 h-12 bg-forest/5 rounded-2xl flex items-center justify-center text-forest group-hover:bg-pop/10 transition-all"><i data-lucide="map-pin"></i></div>
+                                    <span class="text-xl font-black text-gray-700">十勝・芽室町キャンプ場</span>
+                                </div>
+                            </td>
+                            <td class="px-8 py-10"><span class="bg-emerald-100 text-emerald-700 px-6 py-2 rounded-2xl text-xs font-black uppercase tracking-widest shadow-sm">募集中</span></td>
+                            <td class="px-8 py-10 text-right"><i data-lucide="chevron-right" class="w-8 h-8 opacity-0 group-hover:opacity-100 group-hover:translate-x-2 transition-all"></i></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <!-- Entry Section -->
+    <section id="entry" class="py-40 px-6 bg-white relative">
+        <div class="max-w-4xl mx-auto text-center reveal">
+            <h2 class="text-6xl md:text-9xl font-black text-forest mb-16 leading-[0.85] tracking-tighter uppercase">
+                Are you<br />
+                <span class="text-pop underline decoration-wavy underline-offset-[20px] decoration-pop/30">Ready?</span>
+            </h2>
+            <p class="text-2xl text-gray-500 mb-20 max-w-3xl mx-auto font-accent leading-relaxed">
+                キミが採集した「オノマトペ」が、地球を守る力に変わる。<br />
+                一生モノの夏の思い出を、このキャラバンで作ろう。
+            </p>
+            <a href="#" class="group relative inline-block bg-pop hover:bg-orange-600 text-white text-3xl font-black px-20 py-10 rounded-[48px] shadow-2xl shadow-pop/40 transition-all hover:scale-105 active:scale-95 mb-10 w-full md:w-auto overflow-hidden">
+                <span class="relative z-10 flex items-center justify-center gap-6">
+                    申し込みフォームへ <i data-lucide="arrow-right" class="group-hover:translate-x-3 transition-transform"></i>
+                </span>
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-forest text-white py-32 px-6 relative">
+        <div class="max-w-7xl mx-auto grid md:grid-cols-2 lg:grid-cols-3 gap-24 relative z-10">
+            <div>
+                <div class="flex items-center gap-4 mb-10">
+                    <div class="w-12 h-12 bg-white rounded-2xl flex items-center justify-center text-forest shadow-2xl">
+                        <i data-lucide="compass"></i>
+                    </div>
+                    <div class="flex flex-col">
+                        <span class="font-black text-3xl tracking-tighter leading-none italic">CHIKYU-MATOPE</span>
+                        <span class="text-[10px] font-black uppercase tracking-[0.4em] text-sand/30">Camp Caravan Project</span>
+                    </div>
+                </div>
+                <p class="text-sand/60 max-w-sm mb-12 text-lg leading-relaxed font-accent">
+                    地球と遊び、地球を学ぶ。子供たちの知的好奇心を加速させ、持続可能な未来を共に創る体験型プラットフォーム。
+                </p>
+            </div>
+            <div>
+                <h4 class="font-black uppercase text-[12px] tracking-[0.5em] text-pop mb-10">Directory</h4>
+                <ul class="space-y-6 text-xl font-black text-sand/80 italic tracking-tight">
+                    <li><a href="#about" class="hover:text-white hover:pl-2 transition-all block">/ About</a></li>
+                    <li><a href="#program" class="hover:text-white hover:pl-2 transition-all block">/ Program</a></li>
+                    <li><a href="#schedule" class="hover:text-white hover:pl-2 transition-all block">/ Schedule</a></li>
+                    <li><a href="#entry" class="hover:text-white hover:pl-2 transition-all block">/ Entry</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="font-black uppercase text-[12px] tracking-[0.5em] text-pop mb-10">Information</h4>
+                <ul class="space-y-6 text-lg font-bold text-sand/60">
+                    <li><a href="#" class="hover:text-white transition-colors">運営について</a></li>
+                    <li><a href="#" class="hover:text-white transition-colors">利用規約</a></li>
+                    <li><a href="#" class="hover:text-white transition-colors">プライバシーポリシー</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <!-- External JavaScript -->
+    <script src="js/main.js" defer></script>
+</body>
+</html>
